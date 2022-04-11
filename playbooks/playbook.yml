@@ -1,0 +1,6 @@
+- name: tworzenie usera
+  hosts: all
+  become: true
+  roles: 
+  - packages
+  - user
