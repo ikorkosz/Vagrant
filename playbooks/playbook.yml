@@ -1,6 +1,11 @@
-- name: tworzenie usera
+---
+- name: 
   hosts: all
   become: true
-  roles: 
-  - packages
-  - user
+  roles:
+    - user
+    - packages
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform
